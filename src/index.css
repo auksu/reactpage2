@@ -1,115 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
-
-<<<<<<< HEAD
-  color: rgba(255, 255, 255, 0.87); /* 全体文字色 */
-  background-color: #242424;          /* 全体背景色 */
-=======
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
->>>>>>> 2ed4f31c49dd2466016a95885498bf7f242a5e45
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-<<<<<<< HEAD
-
-  color-scheme: light dark; /* ブラウザに両方対応と伝える */
+  color: rgba(255,255,255,0.87);
 }
 
-/* body と #root にも明示的に適用 */
+/* 全体 */
 body, #root {
-  background-color: #242424; /* 全体背景色を固定 */
-  color: rgba(255, 255, 255, 0.87); /* 全体文字色を固定 */
-  min-height: 100vh;
   margin: 0;
+  padding: 0;
+}
+
+/* ナビバー */
+.navbar {
   display: flex;
-  flex-direction: column;
-=======
->>>>>>> 2ed4f31c49dd2466016a95885498bf7f242a5e45
+  align-items: center;
+  position: relative;
+  background-color: rgba(0,37,105,0.9);
+  padding: 33.4px 20px;
+  font-size: 20px;
+
+  position: fixed;  /* ←これが本質 */
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* 左 */
+.nav-left {
+  position: absolute;
+  left: px;
 }
 
-body {
-/*  margin: 0;
-  display: flex;*/
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* 中央（完全中央） */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* 右 */
+.nav-right {
+  position: absolute;
+  right: 100px;
+  display: flex;
+  gap: 80px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* リンク */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* アクティブ */
+.navbar a.active {
+  color: #ffcc00;
 }
 
-.body1 {
-    width: 100%;
-    margin: 0;
-}
-.body2 {
-  color: rgb(0, 0, 0);
-}
-
-.affiliation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 37, 105);
-    padding: 25px;
-}
-
-.myphoto {
-    margin: 10px 20px 20px 20px;
-    align-items: center;
-}
-.photo {
-    width: 100px;
-    height: auto;
+/* コンテンツ */
+main {
+  margin-top: 70px;
+  padding: 20px;
 }
 
 .myinfo {
@@ -119,101 +79,125 @@ button:focus-visible {
     margin: 0;
 }
 
-.seisokuchibar{
-    background-color: rgb(135, 195, 232);
-    color: white;
-}
-.seisokuchi {
-    color: rgb(51, 136, 204);
-}
-
-.contentArea_white {
-    background-color: white;
-    padding: 40px 15%;
-    text-align: center;
-}
-
-.contentArea_white .box {
-    border-radius: 10px;
-    background-color: white;
-    transition: box-shadow 0.5s;
-    box-shadow:
-        10px 10px 30px rgba(18, 47, 61, 0.5),
-        -10px -10px 30px rgba(37, 100, 141, 0.9),
-        inset 10px 10px 30px transparent,
-        inset -10px -10px 30px transparent;
-}
-
-.contentArea_white .box:hover {
-    box-shadow:
-        10px 10px 30px transparent,
-        -10px -10px 30px transparent,
-        inset 10px 10px 30px rgba(18, 47, 61, 0.5),
-        inset -10px -10px 30px rgba(248, 253, 255, 0.9);
-}
-
-.contentArea_color {
-    background-color: rgb(0, 37, 105);
-    padding: 40px 20%;
-    text-align: center;
-}
-
-.contentArea_Sophie {
-  background-color: rgb(154,103,167);
-  padding: 40px 20%;
-  text-align: center;
-}
-
-.contentArea_color .box {
-    border-radius: 10px;
-    background-color: white;
-    transition: box-shadow 0.5s;
-    box-shadow:
-        10px 10px 30px rgba(18, 47, 61, 0.5),
-        -10px -10px 30px rgba(37, 100, 141, 0.9),
-        inset 10px 10px 30px transparent,
-        inset -10px -10px 30px transparent;
-}
-
-.contentArea_color .box:hover {
-    box-shadow:
-        10px 10px 30px transparent,
-        -10px -10px 30px transparent,
-        inset 10px 10px 30px rgba(18, 47, 61, 0.5),
-        inset -10px -10px 30px rgba(248, 253, 255, 0.9);
-}
-
-<<<<<<< HEAD
-.center {
-  display: flex;
-  justify-content: center; /* 横方向中央 */
-}
-
-=======
->>>>>>> 2ed4f31c49dd2466016a95885498bf7f242a5e45
-.title {
+.affiliation {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    color: black;
-}
-.title h2 {
-    margin-bottom: 0;
-    color: black;
+    padding: 25px;
 }
 
-.contentInfo {
-    text-align: center;
-    width: fit-content;
-    margin: auto;
-    padding-bottom: 30px;
-    color: black;
+.myphoto {
+    margin: 10px;
+    align-items: center;
 }
 
-.meiki {
-    color: white;
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  max-width: 1080px;   /* ←全体を中央にまとめる */
+  margin: 0 auto;      /* ←中央配置 */
+  padding: 0px 0px;
 }
 
-html {
-  scroll-behavior: smooth;
+/* 画像 */
+.about-image {
+  flex: 0 450px;  /* ←固定幅 */
+}
+
+.about-image img {
+  width: 100%;      /* ←親に合わせる */
+  height: auto;
+}
+
+/* テキスト */
+.about-text {
+  flex: 1;          /* ←残り全部使う */
+  text-align: left;
+  font-size: 18px;
+}
+
+.home-bg {
+  background-color: #242424;
+  color: white;
+  min-height: auto;
+}
+
+.home-page p {
+  font-size: 16px;
+}
+
+.white-bg {
+  background-color: white;
+  color: black;
+  min-height: auto;
+}
+
+/* グリッド（2列） */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列 */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto; /* 中央寄せ */
+}
+
+/* カード */
+.project-card {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+/* ホバーでちょい浮く */
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 画像 */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* ←比率崩れ防止 */
+  border-radius: 10px;
+}
+
+/* タイトル */
+.project-card h2 {
+  margin: 10px 0 5px;
+}
+
+/* 本文 */
+.project-card p {
+  margin: 0;
+}
+
+.project-p{
+  text-align: left;
+  padding-left: 45px;
+  padding-right: 40px;
+}
+
+.fade {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* 少し下から */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icons8 {
+  font-size: 10px;
 }
