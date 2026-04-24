@@ -34,7 +34,7 @@ function Home({ setPage }) {
       </h2>
 
       <p>
-        <code>Node.js</code>と<code>React</code>で作って
+        <code>Node.js</code>と<code>React</code>で作成し
         <code>GitHub</code>でデプロイしました.
       </p>
     </div>
