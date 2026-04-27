@@ -205,7 +205,7 @@ main {
 /* ハンバーガー */
 .hamburger {
   display: none;
-  font-size: 24px;
+  font-size: 32px;
   cursor: pointer;
   color: white;
   margin-left: auto;  /* ←右寄せ */
