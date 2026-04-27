@@ -19,21 +19,21 @@ body, #root {
 .navbar {
   display: flex;
   align-items: center;
-  position: relative;
-  background-color: rgba(0,37,105,0.9);
-  padding: 33.4px 20px;
-  font-size: 20px;
-
-  position: fixed;  /* ←これが本質 */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+
+  height: 66.8px;
+  padding: 0 20px;
+  background-color: rgba(0,37,105,0.9);
+  font-size: 20px;
 }
 
 /* 左 */
 .nav-left {
   position: absolute;
-  left: px;
+  left: 160px;
 }
 
 /* 中央（完全中央） */
@@ -200,4 +200,66 @@ main {
 
 .icons8 {
   font-size: 10px;
+}
+
+/* ハンバーガー */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;  /* ←右寄せ */
+}
+
+/* メニュー */
+.menu {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 220px;
+  background-color: rgba(0,37,105,0.95);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 999;
+}
+
+.menu span {
+  padding: 12px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu span:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* ここが本題：幅で切り替え */
+@media (max-width: 825px) {
+  .nav-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;   /* ←全体は中央に置く */
+  }
+
+  .about-text {
+    width: 100%;
+    max-width: 500px;      /* ←中央にまとまる箱 */
+    text-align: left;      /* ←中身は左寄せ */
+  }
+
+  .about-image {
+    width: auto;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;  /* ←1列にする */
+  }
 }

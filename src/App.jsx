@@ -150,28 +150,50 @@ function LinksPage() {
 
 function App() {
   const [page, setPage] = useState('home');
+  
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const changePage = (p) => {
+    setPage(p);
+    setMenuOpen(false);
+  };
 
   return (
     <>
       <nav className="navbar">
         <div className="nav-left">
-          <span onClick={() => setPage('home')}>
+          <span onClick={() => changePage('home')}>
             <img
               src={reactLogo}
               className="logo react"
               alt="React logo"
-              style={{ width: '30%', height: 'auto' }}
+              style={{ width: '175px', height:'175px'}}
             />
           </span>
         </div>
 
+        {/* 通常メニュー */}
         <div className="nav-right">
-          <span onClick={() => setPage('about')}>About・Profile</span>
-          <span onClick={() => setPage('projects')}>Projects</span>
-          <span onClick={() => setPage('links')}>LINKS</span>
+          <span onClick={() => changePage('about')}>About・Profile</span>
+          <span onClick={() => changePage('projects')}>Projects</span>
+          <span onClick={() => changePage('links')}>LINKS</span>
+        </div>
+
+        {/* ハンバーガー */}
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
         </div>
       </nav>
 
+      {menuOpen && (
+        <div className="menu">
+          <span onClick={() => changePage('home')}>TOP</span>
+          <span onClick={() => changePage('about')}>About・Profile</span>
+          <span onClick={() => changePage('projects')}>Projects</span>
+          <span onClick={() => changePage('links')}>LINKS</span>
+        </div>
+      )}
+      
       <main
         key={page}
         className={`${page === 'home' ? 'home-bg' : 'white-bg'} fade`}
