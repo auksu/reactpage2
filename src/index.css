@@ -108,6 +108,11 @@ main {
 .about-image img {
   width: 100%;      /* ←親に合わせる */
   height: auto;
+  transition: all 0.25s ease;
+}
+
+.about-image img:hover {
+  transform: translateY(-5px);
 }
 
 /* テキスト */
@@ -257,7 +262,12 @@ main {
 
   .about-image {
     width: auto;
-  }
+    transition: all 0.25s ease;
+}
+
+.links-icons img:hover {
+  transform: translateY(-5px);
+}
   
   .projects-grid {
     grid-template-columns: 1fr;  /* ←1列にする */
