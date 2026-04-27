@@ -33,7 +33,7 @@ function Home({ setPage }) {
       </h2>
 
       <p>
-        <code>Node.js</code>と<code>React</code>で作成し
+        <code>React</code>と<code>Vite</code>で作成し、<code>Node.js</code>環境でビルド後
         <code>GitHub</code>でデプロイしました.
       </p>
     </div>
