@@ -76,7 +76,7 @@ function Projects() {
         <div className="project-card">
           <img src={ua} alt="project1" />
           <h2>ポートフォリオサイト</h2>
-          <p>React・Node.js、CSSで作成しGithubにデプロイした個人ポートフォリオサイト。ReactによりSPA化しています。レスポンシブデザインに対応する予定。</p>
+          <p>React・Node.js、CSSで作成しGithubにデプロイした個人ポートフォリオサイト。ReactによりSPA化しています。レスポンシブデザインも実装。</p>
           <div className="project-links">
             <a href="https://auksu.github.io/reactpage2/" target="_blank" rel="noreferrer">
               <img src={linkIcon} alt="site" 
