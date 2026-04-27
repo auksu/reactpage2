@@ -5,8 +5,7 @@ import ua from './image/ua.jpg';
 import github from './image/github.png';
 import x from './image/x.png';
 import insta from './image/insta.png';
-import tTherays from './image/t-therays.png';
-import linkIcon from './image/link.png'; // なければ後でOK
+import linkIcon from './image/link.png';
 import './App.css';
 
 function Home({ setPage }) {
@@ -47,7 +46,7 @@ function About() {
       <h1>About・Profile</h1>
       <div className="about-container">
         <div className="about-image">
-          <img alt="雷" src={ua} />
+          <img alt="ua" src={ua} />
         </div>
 
         <div className="about-text">
@@ -129,7 +128,7 @@ function Projects() {
 function LinksPage() { 
   return (
     <>
-      <div id = "hoge" className="myphoto">
+      <div className="myphoto links-icons">
         <a href="https://github.com/auksu">
           <img alt="github" width="100" src={github} />
         </a>

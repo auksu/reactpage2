@@ -263,3 +263,11 @@ main {
     grid-template-columns: 1fr;  /* ←1列にする */
   }
 }
+
+.links-icons img {
+  transition: all 0.25s ease;
+}
+
+.links-icons img:hover {
+  transform: translateY(-5px);
+}
