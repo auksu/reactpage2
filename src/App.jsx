@@ -119,6 +119,7 @@ function Projects() {
       <div className='icons8'>
         <p>
           <br></br><a target="_blank" href="https://icons8.com/icon/83168/external-link">外部リンク</a> アイコン by <a target="_blank" href="https://icons8.com">Icons8</a>
+          <p><a target="_blank" href="https://icons8.com/icon/12599/github">GitHub</a> アイコン by <a target="_blank" href="https://icons8.com">Icons8</a></p>
         </p>
       </div>
     </>
