@@ -108,11 +108,6 @@ main {
 .about-image img {
   width: 100%;      /* ←親に合わせる */
   height: auto;
-  transition: all 0.25s ease;
-}
-
-.about-image img:hover {
-  transform: translateY(-5px);
 }
 
 /* テキスト */
@@ -130,6 +125,14 @@ main {
 
 .home-page p {
   font-size: 16px;
+}
+
+.home-page h2{
+  transition: all 0.25s ease;
+}
+
+.home-page h2:hover{
+  transform: translateY(-5px);
 }
 
 .white-bg {
