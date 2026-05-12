@@ -25,13 +25,12 @@ function Home({ setPage }) {
 
       <h2>
         <span
-          style={{ cursor: 'pointer', color: '#646cff' }}
+          className="learn-asahi"
           onClick={() => setPage('about')}
         >
           Learn Asahi
         </span>
       </h2>
-
       <p>
         <code>React</code>と<code>Vite</code>で作成し、<code>Node.js</code>環境でビルド後
         <code>GitHub</code>でデプロイしました.

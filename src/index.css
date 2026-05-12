@@ -284,3 +284,24 @@ main {
 .links-icons img:hover {
   transform: translateY(-5px);
 }
+.learn-asahi {
+  cursor: pointer;
+  color: #646cff;
+  position: relative;
+  display: inline-block;
+}
+
+.learn-asahi::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.learn-asahi:hover::after {
+  width: 100%;
+}
