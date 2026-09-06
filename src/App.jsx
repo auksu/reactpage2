@@ -3,7 +3,7 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import reactLogo from './assets/dots.svg';
 import ua from './image/ua.jpg';
 import github from './image/github.png';
-import amatech from './image/ametech.png';
+import amatech from './image/amatech.png';
 import x from './image/x.png';
 import insta from './image/insta.png';
 import linkIcon from './image/link.png';
