@@ -105,11 +105,6 @@ function Projects() {
               Site
             </a>
             <p></p>
-            <a href="https://github.com/auksu/food_react" target="_blank" rel="noreferrer">
-              <img src={github} alt="github" style={{ width: '15px', height: 'auto' }}
-              />
-              GitHub
-            </a>
           </div>
         </div>
 
