@@ -117,7 +117,7 @@ function Projects() {
         <div className="project-card">
           <img src={amatech} alt="project3" />
           <h2>新あまてく公式サイト</h2>
-          <p>サブPMとして制作に携わりました</p>
+          <p>サブPMとして発案、デザイン修正など制作に携わりました</p>
                     <div className="project-links">
             <a href="https://ama-tech.club" target="_blank" rel="noreferrer">
               <img src={linkIcon} alt="site" 
