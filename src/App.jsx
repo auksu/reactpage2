@@ -3,6 +3,7 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import reactLogo from './assets/dots.svg';
 import ua from './image/ua.jpg';
 import github from './image/github.png';
+import amatech from './image/ametech.png';
 import x from './image/x.png';
 import insta from './image/insta.png';
 import linkIcon from './image/link.png';
@@ -105,6 +106,27 @@ function Projects() {
             </a>
             <p></p>
             <a href="https://github.com/auksu/food_react" target="_blank" rel="noreferrer">
+              <img src={github} alt="github" style={{ width: '15px', height: 'auto' }}
+              />
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        {/* 3個目 */}
+        <div className="project-card">
+          <img src={amatech} alt="project3" />
+          <h2>新あまてく公式サイト</h2>
+          <p>サブPMとして制作に携わりました</p>
+                    <div className="project-links">
+            <a href="https://ama-tech.club" target="_blank" rel="noreferrer">
+              <img src={linkIcon} alt="site" 
+              style={{ width: '15px', height: 'auto' }}
+              />
+              Site
+            </a>
+            <p></p>
+            <a href="https://ama-tech.club" target="_blank" rel="noreferrer">
               <img src={github} alt="github" style={{ width: '15px', height: 'auto' }}
               />
               GitHub
