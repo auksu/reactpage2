@@ -65,76 +65,172 @@ function Projects() {
   return (
     <>
       <h1>Projects</h1>
+
       <div className="project-p">
         <h2>プロジェクト</h2>
         <p>今までに取り組んだプロジェクトの一部を紹介します。</p>
       </div>
 
       <div className="projects-grid">
+
         {/* 1個目 */}
         <div className="project-card">
-          <img src={ua} alt="project1" />
+          <img src={ua} alt="ポートフォリオサイト" />
+
           <h2>ポートフォリオサイト</h2>
-          <p>React・Node.js、CSSで作成しGithubにデプロイした個人ポートフォリオサイト。ReactによりSPA化しています。レスポンシブデザインも実装。</p>
+
+          <p>
+            React・Node.js、CSSで作成しGitHubにデプロイした個人ポートフォリオサイト。
+            ReactによりSPA化しています。レスポンシブデザインも実装しています。
+          </p>
+
           <div className="project-links">
-            <a href="https://auksu.github.io/reactpage2/" target="_blank" rel="noreferrer">
-              <img src={linkIcon} alt="site" 
-              style={{ width: '15px', height: 'auto' }}
+            {/* Site */}
+            <a
+              href="https://auksu.github.io/reactpage2/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={linkIcon}
+                alt="外部リンク"
+                style={{ width: "15px", height: "auto" }}
               />
               Site
             </a>
-            <p></p>
-            <a href="https://github.com/auksu/reactpage2" target="_blank" rel="noreferrer">
-              <img src={github} alt="github" style={{ width: '15px', height: 'auto' }}
+          <br></br>
+            {/* GitHub */}
+            <a
+              href="https://github.com/auksu/reactpage2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={github}
+                alt="GitHub"
+                style={{ width: "15px", height: "auto" }}
               />
               GitHub
             </a>
           </div>
         </div>
+
 
         {/* 2個目 */}
         <div className="project-card">
-          <img src={github} alt="project2" />
-          <h2>部内向けサンプルページ</h2>
-          <p>React・Node.js、CSSを部員が学ぶために作成した基本的なページ</p>
-                    <div className="project-links">
-            <a href="https://auksu.github.io/food_react/" target="_blank" rel="noreferrer">
-              <img src={linkIcon} alt="site" 
-              style={{ width: '15px', height: 'auto' }}
-              />
-              Site
-            </a>
-            <p></p>
-          </div>
-        </div>
+          <img src={github} alt="部内向けサンプルページ" />
 
-        {/* 3個目 */}
-        <div className="project-card">
-          <img src={amatech} alt="project3" />
-          <h2>新あまてく公式サイト</h2>
-          <p>サブPMとして発案、デザイン修正など制作に携わりました</p>
-                    <div className="project-links">
-            <a href="https://ama-tech.club" target="_blank" rel="noreferrer">
-              <img src={linkIcon} alt="site" 
-              style={{ width: '15px', height: 'auto' }}
+          <h2>部内向けサンプルページ</h2>
+
+          <p>
+            React・Node.js、CSSを部員が学ぶために作成した基本的なページです。
+          </p>
+
+          <div className="project-links">
+            {/* Site */}
+            <a
+              href="https://auksu.github.io/food_react/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={linkIcon}
+                alt="外部リンク"
+                style={{ width: "15px", height: "auto" }}
               />
               Site
             </a>
-            <p></p>
-            <a href="https://ama-tech.club" target="_blank" rel="noreferrer">
-              <img src={github} alt="github" style={{ width: '15px', height: 'auto' }}
+          <br></br>
+            {/* GitHub */}
+            <a
+              href="https://github.com/auksu/food_react"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={github}
+                alt="GitHub"
+                style={{ width: "15px", height: "auto" }}
               />
               GitHub
             </a>
           </div>
         </div>
 
+
+        {/* 3個目 */}
+        <div className="project-card">
+          <img src={amatech} alt="新あまてく公式サイト" />
+
+          <h2>新あまてく公式サイト</h2>
+
+          <p>
+            サブPMとしてプロジェクトの発案やデザイン修正など、
+            サイト制作に携わりました。
+          </p>
+
+          <div className="project-links">
+            {/* Site */}
+            <a
+              href="https://ama-tech.club"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={linkIcon}
+                alt="外部リンク"
+                style={{ width: "15px", height: "auto" }}
+              />
+              Site
+            </a>
+          </div>
+        </div>
+
+
         {/* 追加していけばOK */}
       </div>
-      <div className='icons8'>
+
+
+      {/* Icons8 クレジット */}
+      <div className="icons8">
         <p>
-          <br></br><a target="_blank" href="https://icons8.com/icon/83168/external-link">外部リンク</a> アイコン by <a target="_blank" href="https://icons8.com">Icons8</a>
-          <p><a target="_blank" href="https://icons8.com/icon/12599/github">GitHub</a> アイコン by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+          <br />
+
+          <a
+            href="https://icons8.com/icon/83168/external-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            外部リンク
+          </a>{" "}
+          アイコン by{" "}
+
+          <a
+            href="https://icons8.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Icons8
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://icons8.com/icon/12599/github"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>{" "}
+          アイコン by{" "}
+
+          <a
+            href="https://icons8.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Icons8
+          </a>
         </p>
       </div>
     </>
